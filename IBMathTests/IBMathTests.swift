@@ -11,8 +11,18 @@ import XCTest
 
 class IBMathTests: XCTestCase {
 
+    var myIBMath: IBMath!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        myIBMath = IBMath()
+    }
+    
+    func testAdd(){
+        XCTAssertEqual(myIBMath.add(a: 3, b: 5), 8)
+    }
+    
+    func testSub(){
+        XCTAssertEqual(myIBMath.sub(a: 3, b: 5), -2)
     }
 
     override func tearDown() {

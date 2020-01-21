@@ -17,6 +17,7 @@
 		1B0F04FD23D705F50079788D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F04FC23D705F50079788D /* Assets.xcassets */; };
 		1B0F050023D705F50079788D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F04FE23D705F50079788D /* LaunchScreen.storyboard */; };
 		1B0F050B23D705F60079788D /* IBMathExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F050A23D705F60079788D /* IBMathExampleTests.swift */; };
+		1B0F051423D71C390079788D /* IBMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F051323D71C390079788D /* IBMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1B0F050623D705F60079788D /* IBMathExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMathExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B0F050A23D705F60079788D /* IBMathExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMathExampleTests.swift; sourceTree = "<group>"; };
 		1B0F050C23D705F60079788D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B0F051323D71C390079788D /* IBMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				1B0F04D623D705450079788D /* IBMath.h */,
 				1B0F04D723D705450079788D /* Info.plist */,
+				1B0F051323D71C390079788D /* IBMath.swift */,
 			);
 			path = IBMath;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					1B0F04D223D705450079788D = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					1B0F04DB23D705450079788D = {
 						CreatedOnToolsVersion = 11.2;
@@ -322,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0F051423D71C390079788D /* IBMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 		1B0F04E823D705450079788D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CRW93EJEHS;
@@ -525,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ilkerbagci.IBMath;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +540,7 @@
 		1B0F04E923D705450079788D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CRW93EJEHS;
@@ -557,6 +565,7 @@
 		1B0F04EB23D705450079788D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CRW93EJEHS;
 				INFOPLIST_FILE = IBMathTests/Info.plist;
@@ -575,6 +584,7 @@
 		1B0F04EC23D705450079788D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CRW93EJEHS;
 				INFOPLIST_FILE = IBMathTests/Info.plist;
